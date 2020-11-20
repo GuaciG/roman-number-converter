@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+    background-image: url(./images/OldPaper.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  background-color: transparent;
+  width: 320px;
+  height: 345px;
+  padding: 20px 20px;
+}
+
+.container h1 {
+  color: #000;
+}
+
+.container input[type="number"] {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  background-color: transparent;
+  text-align: center;
+  margin: 20px 0 4px 0;
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container input[type="number"]:focus {
+  outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.container input::-webkit-outer-spin-button,
+.container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ /* Firefox */
+.container input[type=number] {
+  appearance: textfield;
+}
+
+.container .range {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.container .message {
+  font-size: 16px;
+  margin: 40px 0 0 0;
+}
+
+.container #result {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 28px;
+  color: #000;
+  word-wrap: break-word;
+}
+
+.person {
+  display: flex;
+}
+
+.person img {
+  width: 208px;
+  height: 400px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.footer p {
+  color: #000;
+}
+
+.footer p a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer p a:hover {
+  color: #472702;
+}
+
+@media only screen and (max-width: 650px) {
+  
+    .main {
+      flex-direction: column-reverse;
+      margin-top: 30px;
+    }
+    .container {
+        margin-top: 30px;  
+    }
+    .container #result {
+      font-size: 25px;
+    }
+    .person img {
+      width: 120px;
+      height: 240px;
+    }
+    .footer {
+      margin: 30px 0;
+      padding-bottom: 20px;
+    }
+}
